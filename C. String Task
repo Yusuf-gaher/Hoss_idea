@@ -1,1 +1,33 @@
-
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <algorithm>
+#include <cmath>
+#include <vector>
+#include <fstream>
+ 
+using namespace std;
+void Youssef_Algaher(){ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);}
+ 
+ 
+int main(){    /**/Youssef_Algaher/**/;
+string s;
+cin>>s;
+ 
+int siz=s.length();
+ 
+for(int i=0;i<siz;i++){
+    if(s[i]=='A'||s[i]=='a'||s[i]=='E'||s[i]=='e'||s[i]=='I'||s[i]=='i'||s[i]=='o'||s[i]=='O'||s[i]=='U'||s[i]=='u'||s[i]=='Y'||s[i]=='y')
+        continue;
+    else{
+        if(s[i]>97)
+            cout<<"."<<s[i];
+        else
+            cout<<"."<<char(s[i]+32);
+    }
+}
+ 
+    return 0;
+}
+ 
+ 
